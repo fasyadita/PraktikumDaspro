@@ -4,15 +4,12 @@ public class PemilihanBilangan12 {
     Scanner sc = new Scanner(System.in);
 
     int angka;
-    
+    String hasil;
+
     System.out.print("masukkan sebuah angka : ");
     angka = sc.nextInt();
-
-    if (angka %2 == 0) {
-        System.out.println("Angka " +angka+ " termasuk bilangan genap");
-
-    } else {
-        System.out.println("Angka " +angka+ " termasuk bilangan ganjil");
-    }
+    
+    hasil = (angka % 2 == 0) ? "Bilangan Genap" : "Bilangan Ganjil";
+    System.out.println(angka + " adalah " + hasil);
     } 
 }
